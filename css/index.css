@@ -1,8 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400&display=swap');
 * {
     margin: 0;
     padding: 0;
 }
 
+body{
+    background-color: #EFF6F6;
+}
 main {
     display: flex;
     width: 100%;
@@ -12,7 +16,10 @@ main {
 #nav {
     width: 100%;
     display: flex;
-
+    background-color: #FFFFFF;
+    position: relative;
+    z-index: 1000000;
+    
 }
 .menu-nav {
     width: 100%;
@@ -20,22 +27,109 @@ main {
     display: flex;
     justify-content:space-between;
     margin: 0 auto;
+    position: relative;
+    z-index: 1000000;
 }
 .menu-nav img {
     margin-top: 0.3em;
+    padding: 1em;
 }
 
 .menu-nav ul {
     display: flex;
     align-items: center;
-    
+    padding: 1em;
+    position: relative;
+    z-index: -100;
 }
 
 .menu-nav li {
-    padding: 1em;
+    padding: 0.8em;
     list-style: none;
 }
 
 .menu-nav a {
     text-decoration: none;
+    color: rgb(2, 2, 2);
+    padding: 0.5em;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 13px;
+}
+.special {
+    background-color: #5FE996;
+    -webkit-box-shadow: 0px 14px 56px -11px #5FE996;
+    box-shadow: 0px 14px 56px -11px #5FE996;
+    border-radius: 5px;
+    padding: 20px 20px;
+    cursor: pointer;
+}
+.menu-burguer {
+    height: 40px;
+    margin: 3em 4em 0 0;
+    display: none;
+}
+.burguer {
+    height: 5px;
+    width: 30px;
+    background-color: rgb(106, 106, 106);
+    margin: 5px;
+
+}
+
+/* RESPONSIVE ACTION */
+
+@media screen and (max-width:720px){
+    #nav {
+        position: relative;
+        z-index: 100000;
+    }
+    
+    .menu-nav ul{
+        flex-direction: column;
+        position: absolute;
+        top: 8.6em;
+        left: 0;
+        width: 100%;
+        padding: 0;
+        align-items: center;
+        z-index: -5;
+    }
+    .menu-ul {
+        display: none;
+    }
+    .menu-nav li:hover{
+        background-color: #5fe996ac;
+    }
+    .menu-nav li {
+        border: 0.3px solid rgb(132, 129, 129);
+        width: 100%;
+        padding: 1em 0 0 0;
+        align-items: center;
+        cursor: pointer;
+    }
+    .menu-burguer {
+        display: block;
+    }
+    .special {
+        background-color: transparent;
+        border-radius: 0px;
+    }
+    .active {
+        display: flex;
+    }
+}
+
+
+
+@keyframes responsive-menu {
+    0% {
+        transform: translateY(-200px);
+        opacity: 0;
+    }
+    70%{
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(200);
+    }
 }
