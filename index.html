@@ -28,24 +28,86 @@
                     </li>
                 </ul>
             <div class="menu-burguer" onclick="activeMenu()">
-                <div class="burguer"></div>
-                <div class="burguer"></div>
-                <div class="burguer"></div>
+                <div class="burguer line1"></div>
+                <div class="burguer line2"></div>
+                <div class="burguer line3"></div>
             </div>
             </div>
         </nav>
     </main>
     <div id="container">
-        <section class="banner">
+        <div class="banner">
             <div class="container-img">
                 <img class="img-carrossell" src="assets/img/img.jpg" alt="first image banner">
                 <div class="arrow-menu">
-                    <div class="btn-after"><i class="fa-solid fa-chevron-left"></i></div>
-                    <div class="btn-next"><i class="fa-solid fa-chevron-right"></i></div>
+                    <span class="btn-after"><i class="fa-solid fa-chevron-left"></i></span>
+                    <span class="btn-next"><i class="fa-solid fa-chevron-right"></i></span>
+                </div>
+            </div>
+        </div>
+        <section class="plans">
+            <h2>PLANS</h2>
+            <div class="container-plans">
+                <div class="plan-one">
+                    <h3>INDIVIDUALS PLAN</h3>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting</p> 
+                    <div class="btn-plan">
+                        <button>Select Plan</button>
+                    </div>
+                </div>
+                <div class="plan-two">
+                    <h3>SINGLE PLAN</h3>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting</p>
+                    <div class="btn-plan">
+                        <button>Select Plan</button>
+                    </div>
+                </div>
+                <div class="plan-three">
+                    <h3>BUSINESS PLAN</h3>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting</p>
+                    <div class="btn-plan">
+                        <button>Select Plan</button>
+                    </div>
                 </div>
             </div>
         </section>
+        <section class="about">
+            <div class="about-container">
+                <h2>ABOUT</h2>
+                <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like)</p>
+            </div>
+        </section>
     </div>
+
+    <footer>
+        <h2>CONTACT</h2>
+        <div class="container-footer">
+            <div class="footer-form">
+                <form action="">
+                    <label for="firstname">First Name:</label>
+                    <input type="text" name="firstname" id="firstname">
+                    <label for="lastname">Last Name:</label>
+                    <input type="text" name="lastname" id="lastname">
+                    <label for="email">Email:</label>
+                    <input type="text" name="email" id="email">
+                    <label for="contact">Contact:</label>
+                    <input type="text" name="contact" id="contact">
+                    <input class="btn-form" type="button" value="Send">
+                </form>
+            </div>
+            <div class="footer-iframe">
+                    <div class="mapouter">
+                        <div class="gmap_canvas">
+                            <iframe id="gmap_canvas" src="https://maps.google.com/maps?q=2880%20Broadway,%20New%20York&t=&z=11&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
+                            </iframe>
+                            <a href="https://www.whatismyip-address.com/divi-discount/"></a>
+                            <br>
+                            </div>
+                        </div>
+                        
+            </div>
+        </div>
+    </footer>
 
     <script src="assets/main.js"></script>
 </body>
